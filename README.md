@@ -1,5 +1,5 @@
 
-## Hi i'm Matheus de Almeida Sobrinho, student Full Stack Developer!
+## Hi i'm Matheus de Almeida Sobrinho, Full Stack Developer Student!
 <div align="center">
   <a href="https://github.com/MatheusAlmeidaSobrinho/MatheusAlmeidaSobrinho">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=MatheusAlmeidaSobrinho&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&style_decoration=none"/>
