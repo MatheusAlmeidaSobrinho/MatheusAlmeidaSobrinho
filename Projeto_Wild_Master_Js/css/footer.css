@@ -1,0 +1,12 @@
+.footer {
+  grid-area: footer;
+  background: linear-gradient(135deg, #813fe4, var(--primary-color));
+  padding: 30px;
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.footer::after {
+  content: '😆';
+}

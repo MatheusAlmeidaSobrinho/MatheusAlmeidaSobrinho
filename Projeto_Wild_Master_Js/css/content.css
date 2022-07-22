@@ -1,0 +1,139 @@
+.content {
+  grid-area: content;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.content-all-columns {
+  grid-column: 1 / -1;
+}
+
+.content img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.imagem-1 {
+  grid-row: span 2;
+  align-self: end;
+  /*grid-row: 3 / 5; poderia colocar especificando, mais se houver inclusão de mais itens bugaria */
+}
+
+.imagem-2 {
+  grid-column: 2 / 2;
+  grid-row: 4 / 5;
+  align-self: end;
+  /* exemplos usando especificado, mais se tiver inclusão vai bugar */
+}
+
+/* Estilos content */
+
+.content p,
+blockquote {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: -0.005rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.informacoes {
+  display: grid;
+  gap: 30px;
+}
+
+/*.informacoes p + p {
+  margin-top: 30px;  da pra fazer assim tb pra colocar margem so no meio dos elementos
+}*/
+
+.titulo {
+  color: rgb(64, 122, 179);
+}
+
+.titulo h1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.titulo span {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+/*Class Caracteristicas*/
+
+.caracteristicas {
+  display: flex;
+  align-items: flex-start;
+}
+
+.caracteristicas > div {
+  width: 80px;
+  text-align: center;
+  background: linear-gradient(135deg, #813fe4, var(--primary-color));
+  border-radius: 6px;
+  box-shadow: 5px 5px 15px 0px rgba(48, 47, 47, 0.2);
+}
+
+.caracteristicas > div:first-child {
+  margin-right: 30px;
+}
+
+.caracteristicas span {
+  display: block;
+  color: white;
+  padding: 3px;
+}
+
+.numero {
+  font-size: 3rem;
+  margin: 3px auto;
+}
+
+.rotulo {
+  background: white;
+  border-radius: 0 0 6px 6px;
+}
+
+/* Class Destaque, Citação e Atributos */
+
+p.destaque {
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  max-width: 16em;
+}
+
+.citacao,
+.atributos {
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 5px 5px 15px 0px rgba(48, 47, 47, 0.2);
+  background: linear-gradient(135deg, #813fe4, var(--primary-color));
+  align-self: start; /* pra nao ficar sobrando aquele espaço embaixo em resoluções menores*/
+}
+
+.citacao p {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.atributos li {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.15rem;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.atributos li + li {
+  border-top: 2px solid var(--primary-color);
+}

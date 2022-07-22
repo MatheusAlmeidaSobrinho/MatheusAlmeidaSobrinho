@@ -1,0 +1,21 @@
+.sidenav {
+  grid-area: sidenav;
+  background: rgba(235, 236, 236, 0.3);
+  padding: 30px;
+}
+
+.sidenav li a {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  margin: 0 auto 30px auto;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 0px rgba(48, 47, 47, 0.2);
+  transition: all 0.2s;
+}
+
+.sidenav li a:hover {
+  background: linear-gradient(to left,rgb(194, 104, 232),rgb(82, 189, 219));
+}

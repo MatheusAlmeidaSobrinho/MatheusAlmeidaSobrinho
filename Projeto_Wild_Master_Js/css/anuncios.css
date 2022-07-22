@@ -1,0 +1,16 @@
+.anuncios {
+  grid-area: anuncios;
+  background: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 30px;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.anuncios img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
