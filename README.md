@@ -10,7 +10,6 @@
   <img align="center" alt="MatheusAlmeida-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="MatheusAlmeida-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   <img align="center" alt="MatheusAlmeida-JAVA" height="30" width="40" src="https://cdn-icons-png.flaticon.com/512/226/226777.png">
-  <img align="center" alt="MatheusAlmeida-SCSS" height="30" width="40" src="https://cdn.iconscout.com/icon/free/png-256/sass-226054.png">
 </div>
   
   ##
