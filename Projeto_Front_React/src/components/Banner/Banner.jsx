@@ -3,10 +3,7 @@ import './Banner.scss'
 function Banner() {
   return (
     <div className="banner">
-      <img
-        src="/images/banner.jpg"
-        alt="Banner principal da pagina do Organo"
-      />
+      <img src="/images/banner.jpg" alt="Banner principal da pagina" />
     </div>
   )
 }
