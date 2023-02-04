@@ -1,0 +1,21 @@
+.race {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+.race h2 {
+  text-align: center;
+  font-size: 32px;
+  border-bottom: 4px solid;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.race .characters {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

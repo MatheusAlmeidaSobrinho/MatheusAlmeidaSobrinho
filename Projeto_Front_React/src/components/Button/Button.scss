@@ -1,0 +1,29 @@
+.button {
+  padding: 1rem 1.75rem;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  text-transform: uppercase;
+  background: linear-gradient(130deg, rgb(208, 116, 251), rgb(156, 64, 248), rgb(210, 17, 249), rgb(132, 2, 207));
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 6px purple;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.button:hover {
+  background: linear-gradient(130deg, rgb(91, 7, 130), rgb(156, 64, 248), rgb(138, 14, 163), rgb(80, 6, 122));
+  transition: all 0.3s ease-in-out;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  text-shadow: 2px 2px 6px white;
+
+}
