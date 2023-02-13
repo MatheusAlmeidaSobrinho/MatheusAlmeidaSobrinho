@@ -1,8 +1,9 @@
 import './Character.scss'
 // const Character = props => {
-const Character = ({ name, image, classe, backgroundColor }) => {
+const Character = ({ name, image, classe, backgroundColor, whenDeleted }) => {
   return (
     <div className="character">
+      <div className="delet" onClick={whenDeleted}></div>
       <div className="header" style={{ backgroundColor: backgroundColor }}>
         <img src={image} alt={name} />
       </div>

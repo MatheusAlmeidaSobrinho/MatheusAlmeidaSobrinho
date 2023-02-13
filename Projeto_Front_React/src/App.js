@@ -30,10 +30,44 @@ function App() {
     }
   ]
 
-  const [characters, setCharacters] = useState([])
+  const inicial = [
+    {
+      name: 'Elesis',
+      classe: 'Espadachim',
+      image:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn3-TFHQ_tIcuAvSxyWkc3Ppb-tVFgCw549Q&usqp=CAU',
+      race: races[0].name
+    },
+    {
+      name: 'Dio',
+      classe: 'Profane',
+      image:
+        'http://vignette2.wikia.nocookie.net/grandchase/images/e/e2/Leviathan_gif.gif/revision/latest?cb=20120528164253&path-prefix=pt-br',
+      race: races[1].name
+    },
+    {
+      name: 'Lire',
+      classe: 'Hunter',
+      image:
+        'http://images.wikia.com/grandchase/pt-br/images/8/87/NewArcher.png',
+      race: races[2].name
+    },
+    {
+      name: 'Potato',
+      classe: 'Potato',
+      image: 'Potato',
+      race: races[3].name
+    }
+  ]
+
+  // const [characters, setCharacters] = useState([])
+  const [characters, setCharacters] = useState(inicial)
+
+  function deleteCharacter() {
+    console.log('delet')
+  }
 
   const whenNewCharacterRegistred = character => {
-    debugger
     setCharacters([...characters, character])
   }
 
@@ -48,15 +82,16 @@ function App() {
         }
       />
 
-      {races.map(race => (
+      {races.map((race, index) => (
         <Race
-          key={race.name}
+          key={index.name}
           name={race.name}
           primaryColor={race.primaryColor}
           secundaryColor={race.secundaryColor}
           characters={characters.filter(
             character => character.race === race.name
           )}
+          whenDeleted={deleteCharacter}
         />
       ))}
       <Footer />

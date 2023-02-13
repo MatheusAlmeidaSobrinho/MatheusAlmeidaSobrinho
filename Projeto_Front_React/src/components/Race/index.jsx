@@ -1,16 +1,14 @@
 import Character from '../Character'
 import './Race.scss'
 
-const Race = props => {
-  const css = { backgroundColor: props.secundaryColor }
-
-  return props.characters.length > 0 ? (
-    <section className="race" style={css}>
-      <h2 style={{ borderColor: props.primaryColor }}>{props.name}</h2>
+const Race = ({ race, characters, props }) => {
+  return characters.length > 0 ? (
+    <section className="race" style={props.secundaryColor}>
+      <h2 style={{ borderColor: race.primaryColor }}>{race.name}</h2>
       <div className="characters">
-        {props.characters.map(character => (
+        {characters.map(character => (
           <Character
-            corDeFundo={props.primaryColor}
+            corDeFundo={race.primaryColor}
             key={character.name}
             name={character.name}
             classe={character.classe}

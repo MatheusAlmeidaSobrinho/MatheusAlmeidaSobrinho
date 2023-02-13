@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  background: linear-gradient(130deg, rgb(208, 116, 251), rgb(156, 64, 248), rgb(210, 17, 249), rgb(132, 2, 207));
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+
+}
